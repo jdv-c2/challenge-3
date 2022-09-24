@@ -35,7 +35,7 @@ main()
    mapfile -t badges < badge/badge-names
    
    for i in ${!badges[@]}; do
-      sed "s/badge-name/${badges[$i]}/g" badge/badge-template > $advpath.links/file-$(( $i + 1 )) 
+     sed "s/badge-name/${badges[$i]}/g" badge/badge-template > $advpath.links/file-$(( $i + 1 )) 
      j=$((RANDOM % 30))
      ln $advpath.links/file-$i /home/tutor/hard-links/file-$(( $i + 1 )) 
      if [ $i != 14 ] ; then
@@ -48,14 +48,15 @@ main()
         done
      fi
    done 
-
-   chown -R tutor:tutor /$advpath.links /home/tutor
    
    # Mission 3   
    mkdir -p /home/tutor/files
    mv tutor/instruction-2 /home/tutor/files/ReadMe 
   
    # Mission 4
+   mv tutor/exercise-1 /home/tutor/files/exercise-1    
+   sed "s/badge-name/gzipper-boss/g" badge/badge-template > /home/tutor/files/badge-2 
+   gzip /home/tutor/files/badge-2
 
    # Mission 5
 
@@ -64,6 +65,9 @@ main()
    # Mission 7
 
    # Mission 8
+   
+   # Change ownerships of objects to tutor
+   chown -R tutor:tutor /$advpath.links /home/tutor
 
    # ---> Target 2 <---
    # Mission 1
