@@ -10,17 +10,22 @@
 _{____nm_________/____\____ 
 
 Like last time, we want you to complete some exercises, before we'll
-send you on your mission. Today, you are going to practice with:
+send you on your mission. 
+
+Today, you are going to practice with:
 - determining file types 
 - extracting archives
 - file compression
 - remote copy via the ssh protocol
  
 In the folder '~/files', there is a file called 'open-me'.
-We don't know what type of file this is. Unlike in Windows, the file 
-type is not determined by a file extension. In Linux you should use
-the 'file' command to determine the type.  
 
-Use the 'file' command on 'open-me' to find out how to... open it. 
-When you've have succeed you will find the rest of the exercises.   
+We don't know what type of file this is. 
+
+Unlike in Windows, the file type is not determined by a file extension. 
+In Linux you should use the 'file' command to determine it.  
+
+Use the 'file' command to find out how to open the file 'open-me'. 
+
+When you've have succeeded, you will find the rest of the exercises.   
 

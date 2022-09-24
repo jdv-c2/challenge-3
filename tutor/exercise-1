@@ -8,19 +8,19 @@
 .--'--'-.    
 
 There are several ways to compress and decompress files on Linux
-machines, depending on the chosen algorithm for file compression.
+machines, depending on the algorithm for file compression.
 
-- Zip is Windows native file compression format, but is available for
-install on Linux machines as zip and unzip commands.
+- Zip is Windows native file compression format. It is available to
+install on Linux machines as 'zip' and 'unzip' commands.
 
-- The gzip command uses the DEFLATE algorithm to compress files. To 
+- The 'gzip' command uses the DEFLATE algorithm to compress files. To 
 compress a file simply use 'gzip file'. To decompress a file you can
 use either 'gzip -d file' or 'gunzip file'.  
 
-- The bzip2 command uses the Burrows–Wheeler block sorting algorithm.    
+- The 'zip2' command uses the Burrows–Wheeler block sorting algorithm.    
 Again, to compress use 'bzip2 file' and to decompress a file you can
 use either 'bunzip2 file'.  
 
-Determine the file type of 'badge-2', then open the file to receive
-your badge.  
+Now determine the file type of 'badge-2'. Then open the file to receive
+your second badge of the day.  
 
