@@ -4,7 +4,7 @@
     ##=-[.].]| \      \ 
     #(    _\ |  |------|
      #   __| |  ||||||||    
-      \  _/  |  ||||||||  Hi there!
+      \  _/  |  ||||||||  Hi from your tutor again! 
    .--'--'-. |  | ____ |  
   '   _     .|__|[o__o]|  Ready for your next challenge? 
 _{____nm_________/____\____ 
@@ -20,7 +20,7 @@ In Linux there are two methods of creating links or shortcuts.
 
 2. Symbolic or soft links on the other hand, are a special filetype 
    that holds a reference to the original file or folder, the same as 
-   a shortcut in Windows. To create a symbolic link use the same ln
+   a shortcut in Windows. To create a symbolic link use the same 'ln'
    command, but with the '-s' option:
    'ln -s file link_name'
 
