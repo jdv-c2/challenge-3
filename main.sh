@@ -37,7 +37,7 @@ main()
    for i in ${!badges[@]}; do
      sed "s/badge-name/${badges[$i]}/g" badge/badge-template > $advpath.links/file-$(( $i + 1 )) 
      j=$((RANDOM % 30))
-     ln $advpath.links/file-$i /home/tutor/hard-links/file-$(( $i + 1 )) 
+     ln $advpath.links/file-$(( $i + 1 )) /home/tutor/hard-links/file-$(( $i + 1 )) 
      if [ $i != 14 ] ; then
         for ((k=0; k <= j; k++)); do
            ln $advpath.links/file-$i $advpath.links/file-$(( $i + 1 ))-lnk-$k 
@@ -57,8 +57,13 @@ main()
    mv tutor/exercise-1 /home/tutor/files/exercise-1    
    sed "s/badge-name/gzipper-boss/g" badge/badge-template > /home/tutor/files/badge-2 
    gzip /home/tutor/files/badge-2
+   mv /home/tutor/badge-2.gz /home/tutor/badge-2
 
    # Mission 5
+   mv tutor/exercise-2 /home/tutor/files/exercise-2    
+   sed "s/badge-name/bzipper2-boss/g" badge/badge-template > /home/tutor/files/badge-3 
+   bzip2 /home/tutor/files/badge-3
+   mv /home/tutor/badge-3.bz2 /home/tutor/badge-3
 
    # Mission 6
 
