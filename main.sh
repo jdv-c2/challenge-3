@@ -79,8 +79,9 @@ main()
    mv tutor/exercise-5 /home/tutor/files/exercise-5.txt    
    
    # Archive everyting for mission 3 
-   tar -cf open-me badge-* exercise-* -C /home/tutor/files
-   rm /home/tutor/badge-* /home/tutor/files/exercise-*
+   cd /home/tutor/files
+   tar -cf open-me badge-* exercise-* && rm badge-* exercise-*
+   cd ~
    
    # Change ownership of objects to tutor
    chown -R tutor:tutor /$advpath.links /home/tutor
