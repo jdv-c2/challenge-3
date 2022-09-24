@@ -11,12 +11,18 @@ _{____nm_________/____\____
 
 Today's ReadMe file is actually a link to another location.  
 
-In Linux there are two methods of creating links or shortcuts:
-- Hard links are a direct reference to a file via its index node or
-  node. Hard links only work on files that are on the same partition;  
-- Symbolic or soft links on the other hand, is a special filetype 
-  that points to the original file or folder, much the same as a    
-  shortcut in Windows.
+In Linux there are two methods of creating links or shortcuts.
+
+1. Hard links are a direct reference to the same file via its inode 
+   (index node). Hard links only work on files that are on the same 
+   partition. To create a hard link to a file use the command: 
+   'ln file link_name'  
+
+2. Symbolic or soft links on the other hand, are a special filetype 
+   that holds a reference to the original file or folder, the same as 
+   a shortcut in Windows. To create a symbolic link use the same ln
+   command, but with the '-s' option:
+   'ln -s file link_name'
 
 Now go ahead. Find the real location of this ReadMe file by listing
 the contents of my home folder in long format. 
