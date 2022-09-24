@@ -66,12 +66,14 @@ main()
    mv /home/tutor/badge-3.bz2 /home/tutor/badge-3
 
    # Mission 6
+   # mv tutor/exercise-3 /home/tutor/files/exercise-3    
+   mv badge/badge-4 /home/tutor/files/badge-4
 
    # Mission 7
 
    # Mission 8
    
-   # Change ownerships of objects to tutor
+   # Change ownership of objects to tutor
    chown -R tutor:tutor /$advpath.links /home/tutor
 
    # ---> Target 2 <---
