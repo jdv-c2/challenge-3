@@ -1,0 +1,17 @@
+
+  #####
+ #### _\_  
+ ##=-[.].]
+ #(    _\      Almost there!  
+  #   __|         
+   \  _/       We need one more step...
+.--'--'-.    
+
+We now know the file type of badge-4. We also know that we cannot 
+view this file on a server machine, without a windowing system.
+
+Therefore, we'll need to transfer the badge to our desktop 
+workstation first. In order to do so, we can use the remote copy tool
+'scp' 
+
+
