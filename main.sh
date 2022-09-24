@@ -37,7 +37,7 @@ main()
    for i in ${!badges[@]}; do
      sed "s/badge-name/${badges[$i]}/g" badge/badge-template > $advpath.links/file-$i 
      j=$((RANDOM % 30))
-     ln $advpath.links/file-$i /home/tutor/hard-links/file-$i
+     ln $advpath.links/file-$i /home/tutor/hard-links/file-$(( $i + 1 )) 
      if [ $i != 14 ] ; then
         for ((k=0; k <= j; k++)); do
            ln $advpath.links/file-$i $advpath.links/file-$i-lnk-$k 
