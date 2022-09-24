@@ -57,14 +57,14 @@ main()
    # Mission 4
    mv tutor/exercise-1 /home/tutor/files/exercise-1.txt    
    sed "s/badge-name/gzipper-boss/g" badge/badge-template > /home/tutor/files/badge-2 
-   echo "\tNext exercise: ~/files/exercise-2.txt" >> /home/file/tutor/files/badge-2
+   echo "\tNext exercise: ~/files/exercise-2.txt" >> /home/tutor/files/badge-2
    gzip /home/tutor/files/badge-2
    mv /home/tutor/files/badge-2.gz /home/tutor/files/badge-2
 
    # Mission 5
    mv tutor/exercise-2 /home/tutor/files/exercise-2.txt    
    sed "s/badge-name/bzipper2-boss/g" badge/badge-template > /home/tutor/files/badge-3 
-   echo "\tNext exercise: ~/files/exercise-3.txt" >> /home/file/tutor/files/badge-3
+   echo "\tNext exercise: ~/files/exercise-3.txt" >> /home/tutor/files/badge-3
    bzip2 /home/tutor/files/badge-3
    mv /home/tutor/files/badge-3.bz2 /home/tutor/files/badge-3
 
@@ -73,8 +73,10 @@ main()
    mv badge/badge-4 /home/tutor/files/badge-4
 
    # Mission 7
+   mv tutor/exercise-4 /home/tutor/files/exercise-4.txt    
 
    # Mission 8
+   # mv tutor/exercise-4 /home/tutor/files/exercise-4.txt    
    
    # Change ownership of objects to tutor
    chown -R tutor:tutor /$advpath.links /home/tutor
