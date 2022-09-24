@@ -44,6 +44,7 @@ main()
         done
      else 
         for ((k=0; k <= 32; k++)); do
+           echo "\tNext: navigate to the ~/files directory and read the ReadMe file" >> $advpath.links/file-14
            ln $advpath.links/file-14 $advpath.links/file-$(( $i + 1 ))-lnk-$k 
         done
      fi
@@ -54,19 +55,21 @@ main()
    mv tutor/instruction-2 /home/tutor/files/ReadMe 
   
    # Mission 4
-   mv tutor/exercise-1 /home/tutor/files/exercise-1    
+   mv tutor/exercise-1 /home/tutor/files/exercise-1.txt    
    sed "s/badge-name/gzipper-boss/g" badge/badge-template > /home/tutor/files/badge-2 
+   echo "\tNext exercise: ~/files/exercise-2.txt" >> /home/file/tutor/files/badge-2
    gzip /home/tutor/files/badge-2
-   mv /home/tutor/badge-2.gz /home/tutor/badge-2
+   mv /home/tutor/files/badge-2.gz /home/tutor/files/badge-2
 
    # Mission 5
-   mv tutor/exercise-2 /home/tutor/files/exercise-2    
+   mv tutor/exercise-2 /home/tutor/files/exercise-2.txt    
    sed "s/badge-name/bzipper2-boss/g" badge/badge-template > /home/tutor/files/badge-3 
+   echo "\tNext exercise: ~/files/exercise-3.txt" >> /home/file/tutor/files/badge-3
    bzip2 /home/tutor/files/badge-3
-   mv /home/tutor/badge-3.bz2 /home/tutor/badge-3
+   mv /home/tutor/files/badge-3.bz2 /home/tutor/files/badge-3
 
    # Mission 6
-   mv tutor/exercise-3 /home/tutor/files/exercise-3    
+   mv tutor/exercise-3 /home/tutor/files/exercise-3.txt    
    mv badge/badge-4 /home/tutor/files/badge-4
 
    # Mission 7
