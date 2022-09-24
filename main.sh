@@ -19,11 +19,36 @@ main()
    # Application
    apt update && apt install -y gcc figlet 
  
+   # Create directory in /usr/share/
+   advpath="/usr/share/.linux-adventures/"    
+   mkdir -p $advpath.links 2> /dev/null 
+
    # ---> Target 1 <---
    # Mission 1
+   mkdir -p /home/tutor/soft-links/{in-here,not-in-here}/
+   mv tutor/instruction-1 /home/tutor/soft-links/in-here/ReadMe 
+   ln -s /home/tutor/soft-links/in-here/ReadMe /home/tutor/ReadMe 
 
    # Mission 2  
+   mkdir -p /home/tutor/hard-links
+   mapfile -t badges < badge/badge-names
+   
+   for i in ${!badges[@]}; do
+     sed "s/badge-name/${badges[$i]}/g" badge/badge-template > $advpath.links/file-$i 
+     j=$((RANDOM % 30))
+     ln $advpath.links/file-$i /home/tutor/hard-links/file-$i
+     if [ $i != 14 ] ; then
+        for ((k=0; k <= j; k++)); do
+           ln $advpath.links/file-$i $advpath.links/file-$i-lnk-$k 
+        done
+     else 
+        for ((k=0; k <= 32; k++)); do
+           ln $advpath.links/file-$i $advpath.links/file-$i-lnk-$k 
+        done
+     fi
+   done 
 
+   
    # Mission 3   
   
    # Mission 4
