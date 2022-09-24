@@ -1,4 +1,4 @@
-# Linux Adventures - Challenge 2
+# Linux Adventures - Challenge 3
 
 Provisioner script:
 
