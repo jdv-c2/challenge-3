@@ -1,0 +1,32 @@
+
+  #####
+ #### _\_  
+ ##=-[.].]
+ #(    _\      Good work!  
+  #   __|         
+   \  _/       You now know how to use the file command...  
+.--'--'-.    
+
+Unlike Windows, file types are not determined by a file extension. 
+Instead, Linux operating systems (and the file command) determine 
+the file type based on its file signature or its "magic bytes".  
+These magic bytes are typically the first couple of bytes in a file.
+
+You can find a list of magic bytes here: 
+https://en.wikipedia.org/wiki/List_of_file_signatures  
+
+In order to identify the magic bytes of a file we can use the 
+command: 'hexdump -C file'. It gives an output of the file in 
+hexadecimal format. 
+
+Check the magic bytes of badge-4 and check if it corresponds with
+information online. 
+
+Give the first six bytes of the file badge-4 in hexadecimal. 
+
+The file 'badge-4' cannot be viewed on a server without a windowing
+system.  
+
+Go to ~/files/exercise-5 to find out how you can transfer this file
+to your Desktop workstation.
+
