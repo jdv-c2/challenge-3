@@ -66,7 +66,7 @@ main()
    mv /home/tutor/badge-3.bz2 /home/tutor/badge-3
 
    # Mission 6
-   # mv tutor/exercise-3 /home/tutor/files/exercise-3    
+   mv tutor/exercise-3 /home/tutor/files/exercise-3    
    mv badge/badge-4 /home/tutor/files/badge-4
 
    # Mission 7

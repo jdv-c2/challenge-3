@@ -21,5 +21,6 @@ use either 'gzip -d file' or 'gunzip file'.
 Again, to compress use 'bzip2 file' and to decompress a file you can
 use either 'bunzip2 file'.  
 
-Determine the file type of 'badge-2', then open the file accordingly.  
+Determine the file type of 'badge-2', then open the file to receive
+your badge.  
 
