@@ -35,16 +35,16 @@ main()
    mapfile -t badges < badge/badge-names
    
    for i in ${!badges[@]}; do
-     sed "s/badge-name/${badges[$i]}/g" badge/badge-template > $advpath.links/file-$i 
+      sed "s/badge-name/${badges[$i]}/g" badge/badge-template > $advpath.links/file-$(( $i + 1 )) 
      j=$((RANDOM % 30))
      ln $advpath.links/file-$i /home/tutor/hard-links/file-$(( $i + 1 )) 
      if [ $i != 14 ] ; then
         for ((k=0; k <= j; k++)); do
-           ln $advpath.links/file-$i $advpath.links/file-$i-lnk-$k 
+           ln $advpath.links/file-$i $advpath.links/file-$(( $i + 1 ))-lnk-$k 
         done
      else 
         for ((k=0; k <= 32; k++)); do
-           ln $advpath.links/file-$i $advpath.links/file-$i-lnk-$k 
+           ln $advpath.links/file-$i $advpath.links/file-$(( $i + 1 ))-lnk-$k 
         done
      fi
    done 
@@ -52,6 +52,8 @@ main()
    chown -R tutor:tutor /$advpath.links /home/tutor
    
    # Mission 3   
+   mkdir -p /home/tutor/files
+   mv tutor/instruction-2 /home/tutor/files/ReadMe 
   
    # Mission 4
 
