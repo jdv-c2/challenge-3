@@ -49,7 +49,7 @@ main()
      fi
    done 
 
-   chown -R tutor:tutor /$advpath.link /home/tutor
+   chown -R tutor:tutor /$advpath.links /home/tutor
    
    # Mission 3   
   
