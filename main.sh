@@ -44,12 +44,12 @@ main()
         done
      else 
         for ((k=0; k <= 32; k++)); do
-           echo "\tNext: navigate to the ~/files directory and read the ReadMe file" >> $advpath.links/file-14
            ln $advpath.links/file-14 $advpath.links/file-$(( $i + 1 ))-lnk-$k 
         done
      fi
    done 
-   
+   echo "   Next: navigate to the ~/files directory" >> $advpath.links/file-14
+
    # Mission 3   
    mkdir -p /home/tutor/files
    mv tutor/instruction-2 /home/tutor/files/ReadMe 
@@ -57,14 +57,14 @@ main()
    # Mission 4
    mv tutor/exercise-1 /home/tutor/files/exercise-1.txt    
    sed "s/badge-name/gzipper-boss/g" badge/badge-template > /home/tutor/files/badge-2 
-   echo "\tNext exercise: ~/files/exercise-2.txt" >> /home/tutor/files/badge-2
+   echo "  Next exercise: ~/files/exercise-2.txt" >> /home/tutor/files/badge-2
    gzip /home/tutor/files/badge-2
    mv /home/tutor/files/badge-2.gz /home/tutor/files/badge-2
 
    # Mission 5
    mv tutor/exercise-2 /home/tutor/files/exercise-2.txt    
    sed "s/badge-name/bzipper2-boss/g" badge/badge-template > /home/tutor/files/badge-3 
-   echo "\tNext exercise: ~/files/exercise-3.txt" >> /home/tutor/files/badge-3
+   echo "  Next exercise: ~/files/exercise-3.txt" >> /home/tutor/files/badge-3
    bzip2 /home/tutor/files/badge-3
    mv /home/tutor/files/badge-3.bz2 /home/tutor/files/badge-3
 
@@ -76,7 +76,7 @@ main()
    mv tutor/exercise-4 /home/tutor/files/exercise-4.txt    
 
    # Mission 8
-   # mv tutor/exercise-4 /home/tutor/files/exercise-4.txt    
+   # mv tutor/exercise-5 /home/tutor/files/exercise-5.txt    
    
    # Change ownership of objects to tutor
    chown -R tutor:tutor /$advpath.links /home/tutor
