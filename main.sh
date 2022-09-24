@@ -44,7 +44,7 @@ main()
         done
      else 
         for ((k=0; k <= 32; k++)); do
-           ln $advpath.links/file-$i $advpath.links/file-$(( $i + 1 ))-lnk-$k 
+           ln $advpath.links/file-14 $advpath.links/file-$(( $i + 1 ))-lnk-$k 
         done
      fi
    done 
