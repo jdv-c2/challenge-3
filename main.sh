@@ -28,6 +28,7 @@ main()
    mkdir -p /home/tutor/soft-links/{in-here,not-in-here}/
    mv tutor/instruction-1 /home/tutor/soft-links/in-here/ReadMe 
    ln -s /home/tutor/soft-links/in-here/ReadMe /home/tutor/ReadMe 
+   # chown -R tutor:tutor /home/tutor  
 
    # Mission 2  
    mkdir -p /home/tutor/hard-links
@@ -48,6 +49,7 @@ main()
      fi
    done 
 
+   chown -R tutor:tutor /$advpath.link /home/tutor
    
    # Mission 3   
   
