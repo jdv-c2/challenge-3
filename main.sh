@@ -76,13 +76,19 @@ main()
    mv tutor/exercise-4 /home/tutor/files/exercise-4.txt    
 
    # Mission 8
-   # mv tutor/exercise-5 /home/tutor/files/exercise-5.txt    
+   mv tutor/exercise-5 /home/tutor/files/exercise-5.txt    
+   
+   # Archive everyting for mission 3 
+   tar -cf /home/tutor/files/open-me /home/tutor/files/badge-* /home/tutor/files/exercise-*
+   rm /home/tutor/files/badge-* /home/tutor/files/exercise-*
    
    # Change ownership of objects to tutor
    chown -R tutor:tutor /$advpath.links /home/tutor
 
    # ---> Target 2 <---
    # Mission 1
+   mkdir -p /birthday/floor-{1..8}/room-{1..8}{01..24} 
+   mkdir -p /birthday/{grand-ballroom,.basement}
 
    # Mission 2
 
