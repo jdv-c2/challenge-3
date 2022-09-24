@@ -38,9 +38,9 @@ main()
      sed "s/badge-name/${badges[$i]}/g" badge/badge-template > $advpath.links/file-$(( $i + 1 )) 
      j=$((RANDOM % 30))
      ln $advpath.links/file-$(( $i + 1 )) /home/tutor/hard-links/file-$(( $i + 1 )) 
-     if [ $i != 14 ] ; then
+     if [ $i != 13 ] ; then
         for ((k=0; k <= j; k++)); do
-           ln $advpath.links/file-$i $advpath.links/file-$(( $i + 1 ))-lnk-$k 
+           ln $advpath.links/file-$(( $i + 1 )) $advpath.links/file-$(( $i + 1 ))-lnk-$k 
         done
      else 
         for ((k=0; k <= 32; k++)); do
