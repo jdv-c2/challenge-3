@@ -124,8 +124,9 @@ main()
    tar -czf gift.tar.gz gift 
    rm gift 
    mv gift.tar.gz gift
-   zip -P circusc123 gift
+   zip -P circusc123 gift.zip gift
    rm gift
+   mv gift.zip gift
    mv /root/linux-challenge-3/hotel/open-the-zip /birthday/floor-4/room-414/ 
    tar -cf gift.tar gift open-the-zip
    rm gift open-the-zip
