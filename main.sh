@@ -93,13 +93,12 @@ main()
    for i in {1..8}; do 
       mkdir /birthday/floor-${i}/room-${i}{01..24}; 
       for j in {01..24}; do 
-         echo "Any time of year, you can find it here" > /birthday/floor-${i}/room-${i}${ji}/you-can-check-out-anytime-you-like
-         echo "Mirrors on the ceiling..." > /birthday/floor-${i}/room-${i}${ji}/you-can-never-leave
+         echo "Any time of year, you can find it here" > /birthday/floor-${i}/room-${i}0${j}/you-can-check-out-anytime-you-like
+         echo "Mirrors on the ceiling..." > /birthday/floor-${i}/room-${i}${j}/you-can-never-leave
       done 
    done 
 
    mapfile -t links < hotel/links
-
 
    mkdir -p /birthday/{grand-ballroom,.basement}
 
