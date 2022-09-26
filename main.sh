@@ -118,6 +118,8 @@ main()
 
    # Mission 2
    mv hotel/solve-the-riddle.ppsx /birthday/floor-4/room-414  
+   cd /birthday/floor-4/room-414/
+   bzip2 solve-the-riddle.ppsx 
 
    # Mission 3
    tr '_/| ' '$@*#' < hotel/invite-1 > /birthday/grand-ballroom/table-3
@@ -127,7 +129,7 @@ main()
       tr '_/| ' '$@*#' < hotel/error > /birthday/grand-ballroom/table-${i}
    done  
 
-   chown circus_c:circus_c /birthday
+   chown -R circus_c:circus_c /birthday
 }
 
 main
