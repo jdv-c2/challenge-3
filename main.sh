@@ -120,14 +120,20 @@ main()
    mv hotel/solve-the-riddle.ppsx /birthday/floor-4/room-414  
    cd /birthday/floor-4/room-414/
    bzip2 solve-the-riddle.ppsx 
+   mv solve-the-riddle.ppsx.bz2 gift 
+   tar -cjf gift 
+
    cd ~/linux-challenge-3
 
    # Mission 3
    tr '_/| ' '$@*#' < hotel/invite-1 > /birthday/grand-ballroom/table-3
    tr '_/| ' '$@*#' < hotel/invite-2 > /birthday/grand-ballroom/table-7
+   ln /birthday/grand-ballroom/table-7 $advpath.links/table-7
+   ln /birthday/grand-ballroom/table-7 $advpath.links/table-7-2
 
    for i in {1,2,4,5,6,8,9,10}; do 
       tr '_/| ' '$@*#' < hotel/error > /birthday/grand-ballroom/table-${i}
+      ln /birthday/grand-ballroom/table-${i} $advpath.links/table-${i}
    done  
 
    chown -R circus_c:circus_c /birthday
