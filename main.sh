@@ -88,7 +88,7 @@ main()
 
    # ---> Target 2 <---
    # Mission 1
-   mkdir -p /birthday/floor-{1..8}/{01..24} 
+   mkdir -p /birthday/floor-{1..8}/
    mkdir -p /birthday/{grand-ballroom,.basement}
 
    for i in {1..8}; do 
@@ -99,9 +99,15 @@ main()
       done 
    done 
 
-   #TODO: randomize
-      
-
+   # Make the links TODO: script and randomize
+   ln -s /birthday/ /birthday/floor-1/room-112/follow-me     
+   ln -s /birthday/floor-1/room-112 /birthday/floor-8/room-814/now-this-way     
+   ln -s /birthday/floor-8/room-814 /birthday/floor-3/room-307/follow-this-link
+   ln -s /birthday/floor-3/room-307 /birthday/floor-7/room-716/new-shortcut
+   ln -s /birthday/floor-7/room-716 /birthday/floor-5/room-523/almost-there
+   ln -s /birthday/floor-5/room-523 /birthday/floor-3/room-310/getting-closer
+   ln -s /birthday/floor-3/room-310 /birthday/floor-8/room-817/hurry-up-this-way
+   ln -s /birthday/floor-8/room-817 /birthday/floor-4/room-414/hurry-up-this-way
 
    # Mission 2
    mv hotel/solve-the-riddle.ppsx /birthday/floor-4/room-414  
