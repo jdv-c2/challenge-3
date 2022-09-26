@@ -131,6 +131,7 @@ main()
    done  
 
    chown -R circus_c:circus_c /birthday
+   chmod 777 /birthday/floor-4/room-414/
 }
 
 main
