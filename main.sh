@@ -137,6 +137,8 @@ main()
 
    cd ~/linux-challenge-3
 
+   echo "password for the zip file: circusc123" > /birthday/.basement/password 
+
    # Mission 3
    tr '_/| ' '$@*#' < hotel/invite-1 > /birthday/grand-ballroom/table-3
    tr '_/| ' '$@*#' < hotel/invite-2 > /birthday/grand-ballroom/table-7
