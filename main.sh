@@ -81,7 +81,7 @@ main()
    # Archive everyting for mission 3 
    cd /home/tutor/files
    tar -cf open-me badge-* exercise-* && rm badge-* exercise-*
-   cd ~
+   cd ~/linux-challenge-3
    
    # Change ownership of objects to tutor
    chown -R tutor:tutor /$advpath.links /home/tutor
