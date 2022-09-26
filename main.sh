@@ -17,7 +17,7 @@ main()
    mkdir -p /birthday 2>/dev/null
 
    # Application
-   apt update && apt install -y gcc figlet 
+   apt update && apt install -y gcc zip
  
    # Create directory in /usr/share/
    advpath="/usr/share/.linux-adventures/"    
@@ -101,14 +101,14 @@ main()
    done 
 
    # Make the links TODO: script and randomize
-   ln -s /birthday/ /birthday/floor-1/room-112/follow-me     
-   ln -s /birthday/floor-1/room-112 /birthday/floor-8/room-814/now-this-way     
-   ln -s /birthday/floor-8/room-814 /birthday/floor-3/room-307/follow-this-link
-   ln -s /birthday/floor-3/room-307 /birthday/floor-7/room-716/new-shortcut
-   ln -s /birthday/floor-7/room-716 /birthday/floor-5/room-523/almost-there
-   ln -s /birthday/floor-5/room-523 /birthday/floor-3/room-310/getting-closer
-   ln -s /birthday/floor-3/room-310 /birthday/floor-8/room-817/hurry-up-this-way
-   ln -s /birthday/floor-8/room-817 /birthday/floor-4/room-414/in-here
+   ln -s /birthday/floor-1/room-112/  /birthday/follow-me     
+   ln -s /birthday/floor-8/room-814 /birthday/floor-1/room-112/now-this-way     
+   ln -s /birthday/floor-3/room-307 /birthday/floor-8/room-814/follow-this-link
+   ln -s /birthday/floor-7/room-716 /birthday/floor-3/room-307/new-shortcut
+   ln -s /birthday/floor-5/room-523 /birthday/floor-7/room-716/almost-there
+   ln -s /birthday/floor-3/room-310 /birthday/floor-5/room-523/getting-closer
+   ln -s /birthday/floor-8/room-817 /birthday/floor-3/room-310/hurry-up-this-way
+   ln -s /birthday/floor-4/room-414 /birthday/floor-8/room-817/in-here
 
    # Mission 2
    mv hotel/solve-the-riddle.ppsx /birthday/floor-4/room-414  
