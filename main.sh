@@ -109,11 +109,23 @@ main()
    ln -s /birthday/floor-3/room-310 /birthday/floor-5/room-523/getting-closer
    ln -s /birthday/floor-8/room-817 /birthday/floor-3/room-310/hurry-up-this-way
    ln -s /birthday/floor-4/room-414 /birthday/floor-8/room-817/in-here
+   
+   rm /birthday/floor-4/room-414/you-can-check-out-anytime-you-like
+   rm /birthday/floor-4/room-414/you-can-never-leave
+
+   # Set follow link option to tutor's bashrc
+   echo "set -o physical" >> /home/tutor/.bashrc
 
    # Mission 2
    mv hotel/solve-the-riddle.ppsx /birthday/floor-4/room-414  
 
    # Mission 3
+   tr '_/| ' '$@*#' < hotel/invite-1 > /birthday/grand-ballroom/table-3
+   tr '_/| ' '$@*#' < hotel/invite-2 > /birthday/grand-ballroom/table-7
+
+   for i in {1,2,4,5,6,8,9,10}; do 
+      tr '_/| ' '$@*#' < hotel/error > /birthday/grand-ballroom/table-${i}
+   done  
 
    chown circus_c:circus_c /birthday
 }
