@@ -98,10 +98,13 @@ main()
       done 
    done 
 
+   mapfile -t links < hotel/links
+
+
    mkdir -p /birthday/{grand-ballroom,.basement}
 
    # Mission 2
-   mv gift/solve-the-riddle.ppsx /birthday/floor-4/room  
+   mv hotel/solve-the-riddle.ppsx /birthday/floor-4/room-414  
 
    # Mission 3
 }
