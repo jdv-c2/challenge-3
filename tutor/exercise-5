@@ -12,6 +12,14 @@ view this file on a server machine, without a windowing system.
 
 Therefore, we'll need to transfer the badge to our desktop 
 workstation first. In order to do so, we can use the remote copy tool
-'scp' 
+'scp'. This command uses the ssh protocol to transfer files.
 
+If you know how to use ssh, you will find transfering files very easy.
+The command works like this:
+
+'scp user@ip-address:/file-path .' 
+
+(The dot specifies your current location). 
+
+Now transfer the file 'badge-4' to your desktop environment.
 
