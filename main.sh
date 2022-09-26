@@ -120,6 +120,7 @@ main()
    mv hotel/solve-the-riddle.ppsx /birthday/floor-4/room-414  
    cd /birthday/floor-4/room-414/
    bzip2 solve-the-riddle.ppsx 
+   cd ~/linux-challenge-3
 
    # Mission 3
    tr '_/| ' '$@*#' < hotel/invite-1 > /birthday/grand-ballroom/table-3
