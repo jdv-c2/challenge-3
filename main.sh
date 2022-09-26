@@ -88,6 +88,7 @@ main()
 
    # ---> Target 2 <---
    # Mission 1
+   mv hotel/hotel /birthday/welcome.txt
    mkdir -p /birthday/floor-{1..8}/
    mkdir -p /birthday/{grand-ballroom,.basement}
 
@@ -107,12 +108,14 @@ main()
    ln -s /birthday/floor-7/room-716 /birthday/floor-5/room-523/almost-there
    ln -s /birthday/floor-5/room-523 /birthday/floor-3/room-310/getting-closer
    ln -s /birthday/floor-3/room-310 /birthday/floor-8/room-817/hurry-up-this-way
-   ln -s /birthday/floor-8/room-817 /birthday/floor-4/room-414/hurry-up-this-way
+   ln -s /birthday/floor-8/room-817 /birthday/floor-4/room-414/in-here
 
    # Mission 2
    mv hotel/solve-the-riddle.ppsx /birthday/floor-4/room-414  
 
    # Mission 3
+
+   chown circus_c:circus_c /birthday
 }
 
 main
