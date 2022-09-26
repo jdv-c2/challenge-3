@@ -130,6 +130,7 @@ main()
    mv /root/linux-challenge-3/hotel/open-the-zip /birthday/floor-4/room-414/ 
    tar -cf gift.tar gift open-the-zip
    rm gift open-the-zip
+   mv gift.tar gift
    bzip2 gift
    mv gift.bz2 gift
    gzip gift 
