@@ -122,6 +122,10 @@ main()
    bzip2 solve-the-riddle.ppsx 
    mv solve-the-riddle.ppsx.bz2 gift 
    tar -czf gift.tar.gz gift 
+   rm gift 
+   mv gift.tar.gz gift
+   zip -p circusc123 gift
+   mv /root/linux-challenge-3/hotel/open-the-zip /birthday/floor-4/room-414/ 
 
    cd ~/linux-challenge-3
 
