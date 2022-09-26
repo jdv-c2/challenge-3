@@ -121,7 +121,7 @@ main()
    cd /birthday/floor-4/room-414/
    bzip2 solve-the-riddle.ppsx 
    mv solve-the-riddle.ppsx.bz2 gift 
-   tar -cjf gift 
+   tar -czf gift.tar.gz gift 
 
    cd ~/linux-challenge-3
 
