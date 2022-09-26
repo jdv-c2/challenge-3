@@ -89,6 +89,7 @@ main()
    # ---> Target 2 <---
    # Mission 1
    mkdir -p /birthday/floor-{1..8}/{01..24} 
+   mkdir -p /birthday/{grand-ballroom,.basement}
 
    for i in {1..8}; do 
       mkdir /birthday/floor-${i}/room-${i}{01..24}; 
@@ -98,9 +99,9 @@ main()
       done 
    done 
 
-   mapfile -t links < hotel/links
+   #TODO: randomize
+   
 
-   mkdir -p /birthday/{grand-ballroom,.basement}
 
    # Mission 2
    mv hotel/solve-the-riddle.ppsx /birthday/floor-4/room-414  
